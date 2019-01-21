@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="login-modal" id="login-modal">
+        <form action="#" class="login-form">
+            <button type="button" class="btn-basic btn-x-login" id="btn-login-modal-close"><i class="fa fa-close"
+                    aria-hidden="true"></i></button>
+            <h3>Войти</h3>
+            <input type="email" name="email" placeholder="Эл. почта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit" class="btn-basic btn-orange">Войти</button>
+        </form>
+    </div>
+    <div class="signin-modal" id="signin-modal">
+        <form action="#" class="signin-form">
+            <button type="button" class="btn-basic btn-x-signin" id="btn-signin-modal-close"><i class="fa fa-close"
+                    aria-hidden="true"></i></button>
+            <h3>Регистрация</h3>
+            <input type="text" name="login" placeholder="Логин" required="">
+            <input type="text" name="name" placeholder="Имя" required="">
+            <input type="text" name="surname" placeholder="Фамилия" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="password" placeholder="Пароль" required="">
+            <button type="submit" class="btn-basic btn-orange">Зарегистрироваться</button>
+        </form>
+    </div>
+    <header class="header" id="header">
+        <nav class="main-navbar">
+            <div class="navbar-wrapper">
+                <a class="logo" href="#">Fitne<span>ss</span></a>
+                <ul class="menu">
+                    <li class="menu-item active"><a class="menu-link" href="#header">Главная</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#about">О нас</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#programs">Программы</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">Блог</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#footer-banners">Контакты</a></li>
+                    <ul class="ml-lg-auto">
+                        <li class="menu-item"><a class="menu-link" href="#" id="btn-login">Войти</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#" id="btn-signin">Регистрация</a></li>
+                        <button type="button" class="btn-basic btn-transparent">Выбрать план</button>
+                    </ul>
+                    <button type="button" class="btn-basic btn-x"><i class="fa fa-close" aria-hidden="true"></i></button>
+                </ul>
+                <button type="button" class="btn-basic btn-bars ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Сделай своё тело<br><span>красивым</span></h1>
+                <p>Сохраняй веру в себя даже тогда, когда в тебя никто не верит</p>
+                <button type="button" class="btn-basic btn-orange">Связаться</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="booking">
+        <div class="booking-cover">
+            <img src="images/booking-cover.jpg" alt="">
+        </div>
+        <form action="#" class="booking-form">
+            <div>
+                <h3>Бесплатно 7 дней</h3>
+                <h2>Онлайн бронирование</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="number" name="people-number" placeholder="Сколько человек?" required>
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="tel" name="tel" placeholder="Телефон" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <button type="submit" class="btn-basic btn-orange">Связаться</button>
+        </form>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h2>Добро пожаловать в <span>Fitness</span></h2><br>
+                <p>Тренажерные залы престижной сети фитнес-клубов Fitness светлы и просторны. Тренажеры удобно
+                    расставлены по зонам – кардиотренажеры отделены от силовых. При этом, выполняя круговую тренировку
+                    или работая в сплите, вам не нужно будет бегать через весь зал в поиске нужного тренажера. Ведь все
+                    необходимое находится рядом! <br><br><b> Это и блочные, и рычажные тренажеры, и силовые
+                        рамы/машины, как тренажеры Смитта и Гаккеншмидта. Все оборудование для фитнеса поставляется
+                        престижными брендами Life Fitness и Hammer Strength.</b>
+                </p>
+            </div>
+            <div class="about-photo">
+                <img src="images/about-photo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2>Добро пожаловать в <span>Fitness</span></h2>
+            <p>У нас есть различные программы тренировок, для каждого!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="images/programs-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Базовый кроссфит</h5>
+                        <p class="card-text">В этой программе, вы узнаете базовые действия и знания.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn-basic btn-orange">Связаться</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/programs-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Фитнес студия</h5>
+                        <p class="card-text">В этой программе, личный тренер будет тренировать вас в течении года.
+                            Полная нагрузка.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn-basic btn-orange">Связаться</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/programs-3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Кружки йоги</h5>
+                        <p class="card-text">Для девушек у нас есть кружки йоги. Каждый день. Любое удобное время для
+                            вас.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn-basic btn-orange">Связаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-2">
+        <div class="container">
+            <h2>С нами у вас будет</h2>
+            <h1>Личный тренер</h1>
+            <button type="button" class="btn-basic btn-orange">Связаться</button>
+        </div>
+    </section>
+
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <h2>Экспертные <span>тренеры</span></h2>
+            <p>Тренера с опытом работы в сфере фитнеса!</p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="images/trainer-1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sara Miller</h5>
+                        <h6>Тренер по плаванию</h6>
+                        <p class="card-text">Победительница летних олимпийский игр по плаванию 2017 года. Она приехала
+                            из Англии.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/trainer-2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6>Универсальный тренер</h6>
+                        <p class="card-text">Бодибилдер, боксёр John Doe. Универсальный тренер ранее работал В
+                            Германии.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/trainer-3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Andy Mark</h5>
+                        <h6>Тренер по бодибилдингу</h6>
+                        <p class="card-text">Знаменитий Andy Mark. поделиться с вам секретами успеха в бодидбилдинге.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-banners" id="footer-banners">
+        <div class="footer-banners-wrapper">
+            <div class="footer-banner-left">
+                <h3>Тренируйтесь бесплатно</h3>
+                <h2>Бесплатно 5 дней</h2>
+                <button type="button" class="btn-basic btn-orange">Связаться</button>
+            </div>
+            <div class="footer-banner-right">
+                <h3>Позвоните нам</h3>
+                <a href="tel: +9989777777770">+9989777777770</a>
+                <button type="button" class="btn-basic btn-orange">Связаться</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-contacts col-xl-5 col-lg-6">
+                    <div>
+                        <a class="logo" href="#">Fitne<span>ss</span></a>
+                        <p>Сеть фитнес-клубов Fitness. Доступны во всех районах Ташкента. Мы рады вас приветствовать.
+                            Компания основано в 2001 году и развивается с каждым годом.</p>
+                    </div>
+                    <div>
+                        <div class="socials">
+                            <p>Follow us:</p>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                        </div>
+                        <form action="#" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Email">
+                            <button type="submit" class="btn-basic btn-orange">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-blogs col-xl-4 col-lg-6">
+                    <h4>Блог</h4>
+                    <div class="footer-post">
+                        <div class="footer-post-cover">
+                            <img src="images/post-1.jpg" alt="">
+                        </div>
+                        <a href="#">Как похудеть за 3 месяца.. Это возможно</a>
+                    </div>
+                    <div class="footer-post">
+                        <div class="footer-post-cover">
+                            <img src="images/post-2.jpg" alt="">
+                        </div>
+                        <a href="#">Почему нужно бегать больше?</a>
+                    </div>
+                    <div class="footer-post">
+                        <div class="footer-post-cover">
+                            <img src="images/post-3.jpg" alt="">
+                        </div>
+                        <a href="#">Лучше место для отдыха. Солнце, море ...</a>
+                    </div>
+                </div>
+                <div class="footer-instagram col-xl-3 col-lg-12">
+                    <h4>Инстаграм</h4>
+                    <div class="photos-wrapper">
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-1.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-2.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-3.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-4.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-5.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-6.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-7.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-8.jpg" alt=""></a>
+                        <a href="#" class="footer-instagram-photo"><img src="images/instagram-9.jpg" alt=""></a>
+                    </div>
+
+                    <a href="#" class="view-more">Больше фотографий</a>
+                </div>
+                <div class="footer-copyright col-12">
+                    <h6>© 2018 Fitness</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

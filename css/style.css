@@ -1,0 +1,1341 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f1f4f6;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.btn-reset {
+    background: none;
+    border: none;
+}
+
+/* ************************************************** Buttons ************************************************** */
+
+.btn-basic {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-basic:focus {
+    outline: none;
+}
+
+.btn-transparent {
+    background: none;
+    outline: 1px solid #fff;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 0;
+    padding: 0.5em 1em;
+}
+
+.btn-transparent:hover {
+    background: #fff;
+    color: #000;
+}
+
+.btn-bars {
+    display: none;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-x {
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+}
+
+.btn-orange {
+    background: #fa7c30;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.btn-orange:hover {
+    background: #f56c17;
+}
+/* ************************************************** Modals ************************************************** */
+
+.login-modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 100;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
+}
+
+.login-form {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
+}
+
+.login-form h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 0.5em 1em;
+}
+
+.login-form .btn-orange {
+    padding: 0.5em 1em;
+}
+
+.login-form .btn-x-login {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+
+
+.signin-modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 100;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
+}
+
+.signin-form {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s
+}
+
+.signin-form h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signin-form input {
+    margin-bottom: 10px;
+    padding: 0.5em 1em;
+}
+
+.signin-form .btn-orange {
+    padding: 0.5em 1em;
+}
+
+.signin-form .btn-x-signin {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************** Header ************************************************** */
+
+.header {
+    height: 950px;
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 35px;
+}
+
+.main-navbar {
+    width: 100%;
+}
+
+.navbar-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1530px;
+    width: 100%;
+    min-height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.logo span {
+    color: #fa7c30;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.menu-link {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.main-navbar .btn-transparent {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.hero {
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero h1 span {
+    color: #fa7c30;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero .btn-orange {
+    padding: 0.75em 2em;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+/* ********************************************* Online Booking ********************************************* */
+
+.booking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    max-width: 1110px;
+    width: 95%;
+    top: 740px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.1);
+}
+
+.booking-cover {
+    max-width: 350px;
+    min-width: 350px;
+    height: 520px;
+}
+
+.booking-cover img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.booking-form {
+    padding: 70px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 520px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.booking-form h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.booking-form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.booking input,
+.booking select {
+    border: none;
+    border-bottom: 1px solid #000;
+    max-width: 170px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    margin: 15px;
+    font-size: 14px;
+    color: #5b5a5d;
+    background: none;
+    outline: none;
+}
+
+.booking input:focus,
+.booking select:focus {
+    outline: none
+}
+
+.booking .btn-orange {
+    margin-top: 30px;
+    padding: 0.75em 2em;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* ************************************************** About Us ************************************************** */
+.about {
+    background: #f1f4f6;
+    margin-top: 340px;
+    padding: 60px 35px;
+    overflow-x: hidden;
+}
+
+.about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.about-photo {
+    max-width: 500px;
+    min-width: 500px;
+    margin-right: -10%;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.about-text {
+    max-width: 680px;
+    padding-right: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-text h2 span {
+    color: #fa7c30;
+}
+
+.about-text p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* ************************************************** Programs ************************************************** */
+.programs {
+    background: #fff;
+    padding: 80px 35px;
+}
+
+.programs h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.programs h2 span {
+    color: #fa7c30;
+}
+
+.programs p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.programs .card-deck {
+    margin-top: 50px;
+}
+
+.programs .card {
+    overflow: hidden;
+}
+
+.programs .card-img-top {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.programs .card-body {
+    background: #f1f4f6;
+    padding: 30px 40px;
+}
+
+.programs .card-footer {
+    border-top: none;
+    background: #f1f4f6;
+    padding: 0 40px 30px 40px;
+}
+
+.programs .btn-orange {
+    padding: 0.75em 2em;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.programs .card-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.programs .card-text {
+    font-size: 16px;
+    color: #000;
+}
+
+/* ************************************************** Hero - Personal Trainer ************************************************** */
+
+.hero-2 {
+    background: url('../images/hero-2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 586px;
+    text-align: center;
+}
+
+.hero-2 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 586px;
+}
+
+.hero-2 h2 {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-2 h1 {
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-2 .btn-orange {
+    padding: 0.75em 2em;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+/* ************************************************** Trainers ************************************************** */
+.trainers {
+    padding: 80px 35px;
+    background: #f1f4f6;
+}
+
+.trainers h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.trainers h2 span {
+    color: #fa7c30;
+}
+
+.trainers p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.trainers .card-deck {
+    margin-top: 60px;
+}
+
+.trainers .card {
+    border: none;
+    text-align: center;
+    background-color: #f1f4f6;
+}
+
+.trainers .card-body {
+    background: #f1f4f6;
+}
+
+.trainers .card-img-top {
+    background: #f1f4f6;
+    height: 380px;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+.trainers .card-title {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+
+}
+
+.trainers h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fa7c30;
+    margin-bottom: 15px;
+}
+
+
+/* ************************************************** Media ************************************************** */
+
+.footer-banners-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer-banner-left {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    min-height: 437px;
+    background: url('../images/footer-banner-1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+.footer-banner-right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    min-height: 437px;
+    background: url('../images/footer-banner-2.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+.footer-banner-left h3,
+.footer-banner-right h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 30px;
+}
+
+.footer-banner-left h2,
+.footer-banner-right a {
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+.footer-banners .btn-orange {
+    padding: 0.75em 2em;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* ************************************************** Footer ************************************************** */
+
+.footer {
+    background: #161418;
+    padding-top: 80px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-contacts p {
+    font-size: 14px;
+    color: #908f91;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.footer .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.footer .socials p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.footer .socials a {
+    margin: 0 8px;
+}
+
+.footer .socials a i {
+    font-size: 15px;
+    color: #fff;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.footer .socials a i:hover {
+    color: #fa7c30;
+}
+
+.subscribe-form input[name="email"] {
+    font-size: 15px;
+    color: #cccccc;
+    padding: 0.5em;
+    border: 1px solid #cccccc;
+    border-right: none;
+
+}
+
+.subscribe-form input[name="email"]:focus {
+    outline: none;
+}
+
+.subscribe-form .btn-orange {
+    padding: 0.5em 2em;
+    font-size: 15px;
+    border: 1px solid #fa7c30;
+    margin-left: -4px;
+}
+
+.footer-post {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+}
+
+.footer-post:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.footer-blogs h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+
+.footer-post-cover {
+    max-width: 125px;
+    min-width: 125px;
+    height: 80px;
+}
+
+.footer-post-cover img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-post a {
+    font-size: 14px;
+    padding: 1em;
+    color: #908f91;
+    line-height: 30px;
+}
+
+.footer-post a:hover {
+    text-decoration: underline;
+    color: rgb(31, 31, 236);
+}
+
+
+.footer-instagram .photos-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 248px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-instagram h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cccccc;
+    margin-bottom: 35px;
+}
+
+
+.footer-instagram-photo {
+    max-width: 80px;
+    min-width: 80px;
+    height: 80px;
+    display: block;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    margin: 1px;
+}
+
+.footer-instagram-photo:hover {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+}
+
+.footer-instagram-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.footer-instagram .view-more {
+    font-size: 12.5px;
+    color: #cccccc;
+}
+
+.footer-instagram .view-more:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.footer-copyright h6 {
+    font-size: 14px;
+    color: #fa7c30;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************** Media ************************************************** */
+
+@media screen and (max-width: 1366px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .about-photo {
+        margin-right: 0;
+    }
+
+    .about-text {
+        padding-right: 100px;
+        max-width: 50%;
+        min-width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footer-instagram {
+        margin-top: 100px;
+    }
+
+    .footer .photos-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .programs .card-body {
+        padding: 1em;
+    }
+
+    .programs .card-footer {
+        padding: 0 1em 1em 1em;
+    }
+
+    .footer-banners-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .footer {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .footer .row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .btn-bars {
+        display: block;
+    }
+
+    .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: fixed;
+        max-width: 480px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fa7c30;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        z-index: 10;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .menu-active {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .menu-link {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .main-navbar .btn-transparent {
+        color: #fff;
+        border: 1px solid #ffff;
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .main-navbar .btn-transparent:hover {
+        color: #fa7c30;
+    }
+
+    .main-navbar .menu ul {
+        margin-top: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column
+    }
+
+    .menu-item:not(:last-child) {
+        margin: 0;
+    }
+
+    .booking-cover {
+        display: none;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .programs .card-deck {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: auto;
+    }
+
+    .programs .card {
+        margin-bottom: 50px;
+    }
+
+    .trainers {
+        padding: 80px 5px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-blogs {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        background-position-x: 25%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .trainers .card-deck {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .trainers .card {
+        margin-bottom: 50px;
+    }
+    .login-form,
+    .signin-form {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        border-radius: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .about-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-photo {
+        margin: auto;
+        margin-top: 50px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 0 20px;
+        height: 100vh;
+    }
+    
+    .hero {
+        padding-top: 50%;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .header .container {
+        padding: 0;
+    }
+
+    .booking {
+        padding: 0 5px;
+    }
+
+    .booking {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .booking h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .booking h3 {
+        font-size: 22px;
+    }
+
+    .booking input,
+    .booking select {
+        max-width: 80%;
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        padding: 60px 5px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .programs .card-footer {
+     text-align: center;
+    }
+    .programs .card {
+        background: #f1f4f6;
+    }
+
+    .programs .card-body {
+        text-align: center;
+    }
+
+    .hero-2 h1 {
+        font-size: 45px;
+    }
+    .hero-2 h2 {
+        font-size: 20px;
+    }
+    .footer-banner-left h3,
+    .footer-banner-right h3 {
+        font-size: 16px;
+    }
+
+    .footer-banner-left h2,
+    .footer-banner-right a {
+        font-size: 26px;
+    }
+
+    .programs {
+        padding: 80px 5px;
+    }
+
+    .footer-post a {
+        font-size: 12px;
+    }
+    .footer .photos-wrapper {
+        max-width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .footer-instagram {
+        text-align: center;
+    }
+    .footer-blogs h4{
+        text-align: center;
+    }
+    .footer .socials {
+        margin-top: 70px;
+    }
+    .subscribe-form {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero .btn-orange,
+    .booking .btn-orange {
+        font-size: 12px;
+    }
+
+    .booking h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+    }
+
+    .subscribe-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .subscribe-form input[name="email"] {
+        border-right: 1px solid #cccccc;
+    }
+
+    .subscribe-form .btn-orange {
+        margin-left: 0;
+        margin-top: 2px;
+    }
+    .footer .socials {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .booking h2 {
+        font-size: 20px;
+    }
+
+    .booking h3 {
+        font-size: 18px;
+    }
+}
